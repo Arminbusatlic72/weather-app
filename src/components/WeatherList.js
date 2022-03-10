@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Stack } from "react-bootstrap";
 import WeatherCard from "./WeatherCard";
 
 const WeatherList = ({ weathers }) => {
@@ -7,7 +7,7 @@ const WeatherList = ({ weathers }) => {
   return (
     <Row>
       {weathers.map(({ dt, main, weather }, index) => (
-        <Col key={index}>
+        <Col xs={6} md={4} lg={2} key={index}>
           <WeatherCard
             min={main.temp_min}
             max={main.temp_max}

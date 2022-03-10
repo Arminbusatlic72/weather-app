@@ -20,7 +20,7 @@ function App() {
       <CitySelector
         onSelectButtonClick={(city) => {
           setUrl(
-            `${baseUrl}/data/2.5/forecast?q=${city}&cnt=5&appid=${apiKey}&units=metric`
+            `${baseUrl}/data/2.5/forecast?q=${city}&cnt=6&appid=${apiKey}&units=metric`
           );
         }}
       />
